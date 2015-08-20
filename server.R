@@ -60,9 +60,3 @@ shinyServer(function(input, output) {
     xx
      })
 })
-
-
-
-# http://stackoverflow.com/questions/12481430/how-to-display-the-frequency-at-the-top-of-each-factor-in-a-barplot-in-r
-
-# http://stackoverflow.com/questions/17838709/scale-and-size-of-plot-in-rstudio-shiny

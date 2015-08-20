@@ -1,7 +1,3 @@
-#http://shiny.rstudio.com/
-
-
-#shinyUI(bootstrapPage(
 shinyUI(pageWithSidebar(
   titlePanel("Wind Chill Calculator"), 
   
@@ -61,9 +57,9 @@ shinyUI(pageWithSidebar(
           )
       ),
       mainPanel(
-          h5("Predict the wind chill effect that is how cold it feels when the wind is blowing. Select the units and use the sliders to set
-          the wind speed and the temperature. The red bar shows the air temperature and the light blue bar shows , how cold it feels.")
+        h5("Often cold temperatures can feel much colder based on the speed of the wind is blowing. That effect is called the wind chill."),
+        h5("Select the units for wind speed and air temperature and use the sliders to set the values for the wind speed and the temperature. The red bar shows the air temperature and the light blue bar shows, how cold it feels."),
+        h5("There must be some wind before the wind chill takes effect and also the formulas used are not accurate if the wind speed is close to zero. If it is hot, we don't calculate the wind chill effect."),
+        h5("The wind chill temperature can be less than the scale in the plot but in that case the bar goes downwards.")
       )
-
-
 ))
