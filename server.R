@@ -50,10 +50,8 @@ shinyServer(function(input, output) {
       c3 <- 10
       dat <-c(temperature,windChill3(v,t))
     }
-#    dat <- c(-20, -35)
 
-    dat <-c(temperature,windChill(v,t))
-    xx <- barplot(dat+z, axes = FALSE, col=c("red","lightblue"), names.arg=c("Temperature","Wind Chill"), ylim=c(b1,b2), width=5)
+        xx <- barplot(dat+z, axes = FALSE, col=c("red","lightblue"), names.arg=c("Temperature","Wind Chill"), ylim=c(b1,b2), width=5)
     
     text(xx, 0, round(dat, 1),cex=1,pos=3) 
     axis(2,seq(b1,b2,by=b3),seq(c1,c2,by=c3))
